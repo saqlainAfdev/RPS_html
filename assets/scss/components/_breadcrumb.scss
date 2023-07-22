@@ -11,6 +11,7 @@
     }
     .breadcrumb-title {
         @include sizing(5.4rem,126.5%,700,$white);
+        text-transform: capitalize;
         @include media-max(767px){
             font-size: 4rem;
         }

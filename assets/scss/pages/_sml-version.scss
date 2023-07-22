@@ -1,0 +1,104 @@
+
+
+.spacing-y-sm {
+    padding-block: 8rem;
+    @include media-max(767px){
+        padding-block: 5rem;;
+    }
+}
+
+.sml-version-block {
+    padding-left: 20.9rem;
+    @include media-max(1200px){
+        padding-left: 7rem;        
+    }
+    @include media-max(767px){
+        padding-left: 0;
+    }
+    .sml-desc-block {
+        max-width: 63.7rem;
+        @include media-max(1200px){
+            margin-top: 3rem;
+        }
+        @include media-max(767px){
+            max-width: 100%;
+        }
+        .desc {
+            p {
+                &:not(:last-child){
+                    margin-bottom: 3rem;
+                }
+            }
+            margin-bottom: 2.2rem;
+        }
+    }
+}
+
+.our-cloud-collaboration-sec {
+    .intro-block {
+        max-width: 75.1rem;
+        margin-bottom: 9.7rem;
+        margin-inline: auto;
+        text-align: center;
+        @include media-max(767px){
+            margin-bottom: 4rem;
+        }
+        p {
+            max-width: 64.4rem;
+            margin-inline: auto;;
+        }
+    }
+    .sml-grid-block {
+        padding-inline: 7rem;
+        @include media-max(1200px){
+            padding-inline: 4rem;
+        }
+        @include media-max(767px){
+            padding-inline: 0;
+        }
+        .sml-grid-row {
+            gap: 3rem 9rem;
+            .sml-img-col {
+                width: calc(42.2% - 4.5rem);
+                @include media-max(767px){
+                    width: 100%;
+                }
+                .img-block {
+                    @include img-block(47.3rem);
+                }
+            }
+            .sml-desc-col {
+                width: calc(57.8% - 4.5rem);
+                @include media-max(767px){
+                    width: 100%;
+                }
+                p {
+                    margin-bottom: 2.1rem;
+                padding-right: 1rem;
+                }
+                .sec-header {
+                    margin-bottom: 1rem;
+                    .main-heading {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:first-child {
+                margin-bottom: 15.9rem;
+                @include media-max(767px){
+                    margin-bottom: 6rem;
+                }
+            }
+            &:nth-child(even){
+                flex-direction: row-reverse;
+            }
+        }
+    }
+    .sml-desc-inner {
+        max-width: 58.5rem;
+        @include media-max(767px){
+            max-width: 100%;
+        }
+    }
+}
+

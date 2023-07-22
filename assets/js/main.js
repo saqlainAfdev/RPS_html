@@ -1,8 +1,4 @@
 
-// const lock = await navigator.wakelock.request("screen");
-// await lock.release();
-
-
 // humberger menu JS
 
 const humbergerIcon = document.querySelector('.mobile-menu-main .outer');

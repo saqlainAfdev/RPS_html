@@ -1,0 +1,245 @@
+
+.sml-version-sec {
+    &.cyber-security-sec {
+        
+        padding-bottom: 26.3rem;
+        .sml-desc-block {
+            max-width: 73.2rem;
+            @include media-max(767px){
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.security-container {
+    max-width: 1092px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+
+.cyber-security-sec{
+    
+    .cyber-sec-main-img {
+        @include img-block(43.7rem);
+        
+        margin-bottom: 3rem;
+    }
+    .security-data-grid {
+        gap: 3rem 5rem;
+        margin-bottom: 6.6rem;
+        .left {
+            width: calc(46.8% - 2.5rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .right {
+            width: calc(53.2% - 2.5rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .sec-header {
+            max-width: 33.7rem;
+            
+        }
+        .desc {
+            p {
+                font-size: 1.8rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+    .security-grid-row {
+        gap: 3rem 5rem;
+        .cols {
+            width: calc(50% - 2.5rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+            &:nth-child(even){
+                margin-top: 6.5rem;
+                @include media-max(767px){
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .security-container {
+        position: relative;
+        top: -16.7rem;
+    }
+}
+
+.cyber-security-card {
+    &:hover {
+        .img-block {
+            img {
+                filter: grayscale(1)
+            }
+        }
+    }
+    .img-block {
+        @include img-block(38.8rem);
+        margin-bottom: 2.6rem;
+        a {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            @include transition;
+        }
+    }
+    .title {
+        @include sizing(2.4rem,150%,400,$secondary);
+        margin-bottom: .6rem;
+        padding-right: 3rem;
+    }
+    p {
+        @include sizing(1.4rem,180%,400,rgba(#495057,.80));
+        margin-bottom: 1.4rem;
+    }
+}
+
+
+.cyber-services-list-block {
+    .security-services-row {
+        gap: 3rem 7.4rem;
+        margin-bottom: 13rem;
+        align-items: center;
+        @include media-max(767px){
+            margin-bottom: 6rem;
+        }
+        .cyber-img-col {
+            width: calc(44.5% - 3.7rem);
+            padding-left: 3.4rem;
+            @include media-max(767px){
+                width: 100%;
+                padding-left: 0;
+            }
+            .img-block {
+                @include img-block(32.4rem);
+            }
+        }
+        .cyber-desc-col {
+            width: calc(55.5% - 3.7rem);
+            @include media-max(767px){
+                width: 100%;
+                padding-right: 0;
+            }
+            .sec-header {
+                margin-bottom: 1rem;
+                .main-heading {
+                    margin-bottom: 0;
+                }
+                
+            }
+            p {
+                margin-bottom: 2.1rem;
+            }
+            padding-right: 3.4rem;
+        }
+        &:nth-child(even){
+            flex-direction: row-reverse;
+            .cyber-img-col {
+                padding-right: 3.4rem;
+                padding-left: 0;
+                @include media-max(767px){
+                    padding-right: 0;
+                }
+            }
+            .cyber-desc-col {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.cyber-sec-bottom-desc {
+    max-width: 93.6rem;
+    p {
+        @include sizing(1.8rem,2.8rem,400,#787C82);
+    }
+}
+
+
+// system manage page css
+
+.system-manage-sec {
+    .sec-header {
+        margin-bottom: 7.7rem;
+    }
+    .system-manage-grid-row {
+        gap: 3rem 6rem;
+        padding-inline: 4.2rem;
+        @include media-max(1200px){
+            padding-inline: 0;
+        }
+        .left {
+            width: calc(45% - 3rem);
+            .img-block {
+                @include img-block(38.8rem);
+            }
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .right {
+            width: calc(55% - 3rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .desc {
+            .sec-header {
+                margin-bottom: 2rem;
+                padding-right: 3rem;
+            }
+            p {
+                &:not(:last-child){
+                    margin-bottom: 3rem;
+                }
+            }
+            .text-btn {
+                margin-top: 1.3rem;
+            }
+        }
+    }
+    
+}
+
+.system-manage-desc {
+    margin-top: 11.1rem;
+    max-width: 78.8rem;
+    p {
+        @include sizing(1.8rem,2.8rem,400,#787C82)
+    }
+    @include media-max(767px){
+        margin-top: 6rem;
+        
+    }       
+}
+
+.cloud-services-list-sec {
+    &.system-manange-page {
+        .cloud-list-row {
+            .cols {
+                margin-top: 0;
+            }
+        }
+    }
+} 
+
+.cyber-sec-services-sec {
+    &.system-page {
+        .cyber-services-list-block {
+            .security-services-row {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
