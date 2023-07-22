@@ -1,0 +1,39 @@
+
+
+// animations
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(400%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-400%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

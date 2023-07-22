@@ -1,0 +1,96 @@
+
+.it-services-sec {
+    padding-block: 8rem;
+    .sec-header {
+        overflow: hidden;
+    }
+    @include media-max(767px){
+        padding-block: 6rem;
+    }
+    .sec-header {
+        margin-bottom: 3.3rem;
+    }
+
+    .it-services-block {
+        padding-left: 13.2rem;
+        @include media-max(1200px){
+            padding-left: 7rem;
+        }
+        @include media-max(767px){
+            padding-left: 0;
+        }
+    }
+    .it-services-row {
+        gap: 3rem 5.2rem;
+        .img-col {
+            width: calc(40% - 2.6rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .desc-col {
+            width: calc(60% - 2.6rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+            .sec-header {
+                margin-bottom: 2rem;
+            }
+            p{
+                margin-bottom: 1.5rem;
+            }
+        }
+        .img-block {
+            @include img-block(47.3rem);
+        }
+    }
+}
+
+// it teams section 
+
+.it-teams-sec {
+    padding-block: 8rem;
+    .sec-header {
+        overflow: hidden;
+    }
+    @include media-max(767px){
+        padding-block: 5rem;
+    }
+    .it-teams-row {
+        gap: 3rem 7rem;
+        margin-bottom: 9.7rem;
+        @include media-max(767px){
+            margin-bottom: 5.7rem;
+        }
+        .desc-col{
+            width: calc(56.4% - 3.5rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+            .sec-header {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 2.1rem;
+            }
+        }
+        .img-col {
+            width: calc(43.6% - 3.5rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .img-block {
+            @include img-block(47.3rem);
+        }
+    }
+
+    .it-bottom-desc {
+        max-width: 92.8rem;
+        margin-inline: auto;
+        text-align: center;
+        p {
+            line-height: 2.8rem;
+        }
+    }
+}

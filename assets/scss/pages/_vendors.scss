@@ -1,0 +1,75 @@
+
+.vendors-sec {
+    padding-block: 8rem;
+    @include media-max(767px){
+        padding-block: 5rem;
+    }
+    .vendors-row {
+        gap: 1.6rem;
+        .vendor-card {
+            width: calc(33.333% - 1.66rem);
+            @include media-max(991px){
+                width: calc(50% - .8rem);
+            }
+            @include media-max(575px){
+                width: 100%;
+            }
+        }
+    }
+}
+
+.vendor-card {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: .6rem;
+    padding: 2rem 1.6rem;
+    .icon-title {
+        gap: 1.4rem;
+        margin-bottom: 1.5rem;
+        align-items: center;
+    }
+    .icon {
+        max-width: 6.1rem;
+        min-width: 6.1rem;
+        height: 6.1rem;
+        border-radius: 50%;
+    }
+    .title-block {
+        h4 {
+            @include sizing(2rem,2.8rem,normal,#26436B);
+            margin-bottom: .1rem;
+            text-transform: capitalize;
+        }
+        a {
+            @include sizing(1.6rem,2.4rem,500,#00BDE7);
+            font-family: $cubin;
+            @include transition;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    p {
+        margin-bottom: 1.6rem;
+        color: #768BA0;
+        line-height: 2.4rem;
+    }
+    .primary-btn {
+        border-radius: .6rem;
+        background-color: transparent;
+        border: 1px solid #00BDE7;
+        overflow: hidden;
+        span {
+            color: #00BDE7;
+            text-transform: capitalize;
+            font-weight: 400;
+        }
+        &::before {
+            background-color: #00BDE7;
+        }
+        &:hover {
+            span {
+                color: $white;
+            }
+        }
+    }
+}

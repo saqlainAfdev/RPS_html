@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css" type="text/css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- AOS CSS FILE -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Reid Power Solution - About</title>
+
+</head>
+
+<body>
+
+    <!-- site header -->
+
+    <header id="header">
+        <div class="container">
+            <div class="header-row d-flex justify-content-between align-items-center flex-wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/imgs/logo.svg" alt="Reid Power Solution" title="Reid Power Solution" class="img-fluid">
+                    </a>
+                </div>
+                <div class="mobile-menu-main">
+                    <label for="menu">
+                        <input type="checkbox" class="d-none" id="menu">
+                        <span class="outer">
+                            <span class="humber-menu">
+                                <span></span>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                <nav class="navbar">
+                    <ul class="main-menu d-flex justify-content-center align-items-center flex-wrap">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Pricing
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Get Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="tel:203-3020-1000" class="number-btn">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.91953 1.49412C5.53477 1.46287 5.10703 1.5742 4.7125 1.85154C4.36485 2.09373 3.61485 2.68943 2.91367 3.36326C2.56406 3.6992 2.23008 4.04881 1.97227 4.39256C1.7125 4.73631 1.48594 5.05076 1.49961 5.50779C1.51328 5.91795 1.5543 7.13084 2.42735 8.99021C3.30039 10.8476 4.99375 13.3965 8.29649 16.7012C11.6012 20.0058 14.15 21.6992 16.0074 22.5722C17.8648 23.4453 19.0797 23.4863 19.4898 23.5C19.9449 23.5137 20.2594 23.2871 20.6031 23.0273C20.9469 22.7676 21.2965 22.4355 21.6324 22.0859C22.3043 21.3847 22.9 20.6347 23.1422 20.2871C23.6949 19.5 23.6031 18.5703 22.9879 18.1387C22.6012 17.8672 19.0445 15.5 18.5094 15.1719C17.9664 14.8398 17.3414 14.9902 16.7828 15.2851C16.3434 15.5176 15.1539 16.1992 14.8141 16.3945C14.5582 16.2324 13.5875 15.5859 11.4996 13.498C9.40977 11.4101 8.76524 10.4394 8.60313 10.1836C8.79844 9.84373 9.47813 8.66014 9.7125 8.21287C10.0055 7.65623 10.1695 7.02537 9.81992 6.4785C9.67344 6.24607 9.00742 5.2324 8.33555 4.21482C7.66172 3.19725 7.02305 2.2324 6.85703 2.00193V1.99998C6.64024 1.70115 6.30235 1.52537 5.91953 1.49412ZM12.4996 2.49998V3.49998C17.4625 3.49998 21.4996 7.53709 21.4996 12.5H22.4996C22.4996 6.98631 18.0133 2.49998 12.4996 2.49998ZM5.82774 2.5156C5.96446 2.53318 6.04649 2.58787 6.04649 2.58787C6.12656 2.6992 6.82774 3.74998 7.49961 4.7656C8.17149 5.78318 8.85703 6.82615 8.97617 7.0156C8.99571 7.0449 9.02305 7.37693 8.82774 7.74607V7.74803C8.60703 8.16795 7.57774 9.96678 7.57774 9.96678L7.43516 10.2187L7.58164 10.4687C7.58164 10.4687 8.34922 11.7637 10.7906 14.2051C13.234 16.6465 14.5289 17.416 14.5289 17.416L14.7789 17.5625L15.0309 17.4199C15.0309 17.4199 16.8258 16.3926 17.2496 16.1699C17.6188 15.9765 17.9508 16.0019 17.9898 16.0254C18.3356 16.2383 22.1773 18.791 22.4137 18.957C22.4215 18.9629 22.6305 19.2793 22.3258 19.7129H22.3238C22.1402 19.9765 21.5387 20.7402 20.9117 21.3926C20.5973 21.7187 20.275 22.0234 20.0016 22.2285C19.7281 22.4336 19.484 22.498 19.5231 22.5C19.0973 22.4863 18.1578 22.4765 16.4332 21.666C14.7086 20.8574 12.2477 19.2383 9.00352 15.9922C5.76133 12.75 4.14219 10.289 3.33164 8.56248C2.52305 6.83787 2.51328 5.89842 2.49961 5.47459C2.50156 5.51365 2.56602 5.26756 2.7711 4.99412C2.97617 4.72068 3.27891 4.39646 3.60508 4.08201C4.25938 3.45506 5.0211 2.8535 5.28477 2.6699V2.67185C5.50157 2.51951 5.69102 2.49998 5.82774 2.5156ZM12.4996 5.27146V6.27146C15.9352 6.27146 18.7281 9.06639 18.7281 12.5H19.7281C19.7281 8.51365 16.4859 5.27146 12.4996 5.27146ZM12.4996 7.99998V8.99998C14.4293 8.99998 15.9996 10.5703 15.9996 12.5H16.9996C16.9996 10.0176 14.9801 7.99998 12.4996 7.99998Z" fill="white"/>
+                    </svg>
+                    <span>
+                        203-3020-1000
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- breadcrumb -->
+        <section class="breadcrumb-banner" style="background: center / cover no-repeat url('assets/imgs/about-banner-bg.png'),#051A27;">
+            <div class="sm-container">
+                <h2 class="breadcrumb-title animate-title brline">About Reid Power</h2>
+            </div>
+        </section>
+        <!-- about welcome section -->
+        <section class="about-welcome-sec spacing-y">
+            <div class="sm-container">
+                <div class="about-welcome-row d-flex flex-wrap">
+                    <div class="cols">
+                        <div class="about-title-block">
+                            <div data-aos-easing="linear" data-aos="fade-up" class="about-welcome-img">
+                                <img src="assets/imgs/about-welcome-img-1.png" alt="#" class="img-fluid">
+                            </div>
+                            <header data-aos-easing="linear" data-aos="fade-up" data-aos-duration="500"  class="sec-header">
+                                <h2 class="main-heading">
+                                    Welcome to Reid Power<br>
+                                    Solutions
+                                </h2>
+                            </header>
+                            <a href="#" class="text-btn">
+                                <span>join now</span>
+                                <span class="icon">
+                                    <img src="assets/imgs/gradient-right-arrow.svg" alt="#" class="img-fluid">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <div class="welcome-desc-block">
+                            <div data-aos-duration="500" data-aos-easing="linear" data-aos="zoom-in" class="about-welcome-img">
+                                <img src="assets/imgs/about-welcome-img-2.png" alt="#" class="img-fluid">
+                            </div>
+                            <div class="desc">
+                                <p>
+                                    your go-to IT service provider based in Brooklyn. We are a black-owned business that is committed to delivering top-of-the-line technology solutions to businesses and individuals across the region. Our team of experts is dedicated to providing exceptional services that are tailored to your unique needs.
+                                </p>
+                                <p>
+                                    At Reid Power Solutions, we believe that technology is the key to success in today's world. That's why we are passionate about 
+                                </p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- solutions section -->
+        <section class="solutions-to-client-sec spacing-y">
+            <div class="sm-container">
+                <div class="clients-solutions-block">
+                    <div data-aos-duration="500" data-aos-easing="linear" data-aos="zoom-in" class="branding-logo">
+                        <img src="assets/imgs/reid-power-solutions.svg" alt="#" class="img-fluid">
+                    </div>
+                    <div class="client-solutions-main-row d-flex flex-wrap align-items-center">
+                        <div class="solutions-img-col">
+                            <div class="solutions-img-block">
+                                <img src="assets/imgs/about-sol-img-1.png" alt="#" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="solutions-desc-col">
+                            <div class="about-sol-desc">
+                                <header class="sec-header">
+                                    <h2 class="main-heading">
+                                        Solutions to help our clients<br> achieve their goals
+                                    </h2>
+                                </header>
+                                <p>
+                                    We understand that every business is different, and we take the time to understand your needs so we can provide the best possible solutions.
+                                </p>
+                                <p>
+                                    Our team is made up of highly skilled and experienced professionals who are passionate about technology and committed to delivering excellent customer service. We pride ourselves on our attention to detail, reliability, and commitment to our clients' success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients-solutions-img-row d-flex flex-wrap">
+                        <div class="left-col">
+                            <div data-aos-duration="500" data-aos-easing="linear" data-aos="fade-up" class="solution-sm-img">
+                                <img src="assets/imgs/about-sol-img-2.png" alt="#" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="solution-lg-img">
+                                <img src="assets/imgs/about-sol-img-3.png" alt="#" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- black owned bussiness section -->
+        <section class="black-owned-sec">
+            <div class="black-owned-row d-flex flex-wrap align-items-center">
+                <div class="cols">
+                    <div class="black-owned-desc-block">
+                        <div class="desc">
+                            <header  class="sec-header">
+                                <h2 data-aos-duration="500" data-aos-easing="linear" data-aos="fade-up" class="main-heading white">
+                                    As a black-owned business
+                                </h2>
+                            </header>
+                            <p>
+                                We are a black-owned business that is committed to delivering top-of-the-line technology solutions to businesses and individuals across the region. Our team of experts is dedicated to providing exceptional services that are tailored to your unique needs.
+                            </p>
+                            <p>
+                                At Reid Power Solutions, we believe that technology is the key to success in today's world. That's why we are passionate about providing affordable and customized solutions to help our clients achieve their goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cols">
+                    <div class="black-owned-img-block">
+                        <img src="assets/imgs/about-bussiness-img.png" alt="#" class="img-fluid">
+                        <a class="play-btn" href="assets/imgs/demo-video.mp4" data-fancybox="outboard">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.0751953 0.325073L13.7252 9.10007L0.0751953 17.8751V0.325073Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about services section -->
+        <section class="offer-services-sec spacing-y">
+            <div class="sm-container">
+                <div class="offer-services-row d-flex flex-wrap align-items-center">
+                    <div class="cols">
+                        <div class="offer-services-img">
+                            <img src="assets/imgs/about-services-img.png" alt="#" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <div class="offer-services-desc-block">
+                            <header class="sec-header">
+                                <h2 data-aos-duration="500" data-aos-easing="linear" data-aos="fade-down"  class="main-heading">
+                                    At Reid Power Solutions, we offer 
+                                    a comprehensive range of services
+                                </h2>
+                            </header>
+                            <div class="desc">
+                                <p>
+                                    including network setup and management, data backup and recovery, cloud computing solutions, cybersecurity, and more. Whatever your technology needs may be, we have the expertise to deliver
+                                </p>
+                                <p>
+                                    Thank you for considering Reid Power Solutions as your IT service provider. We look forward to working with you and helping your business thrive.
+                                </p>
+                            </div>
+                            <a href="#" class="text-btn">
+                                <span>join now</span>
+                                <span class="icon">
+                                    <img src="assets/imgs/gradient-right-arrow.svg" alt="#" class="img-fluid">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brand logos section -->
+        <section class="brands-sec">
+            <div class="container">
+                <div class="brandsSlider">
+                    <div class="items">                        
+                        <div class="brands-logo-card">
+                            <a href="#">
+                                <img src="assets/imgs/brand-logo-1.svg" alt="#" class="img-fluid">
+                            </a>                                
+                        </div>                        
+                    </div>
+                    <div class="items">                        
+                        <div class="brands-logo-card">
+                            <a href="#">
+                                <img src="assets/imgs/brand-logo-2.svg" alt="#" class="img-fluid">
+                            </a>                                
+                        </div>                        
+                    </div>
+                    <div class="items">                        
+                        <div class="brands-logo-card">
+                            <a href="#">
+                                <img src="assets/imgs/brand-logo-3.svg" alt="#" class="img-fluid">
+                            </a>                                
+                        </div>                        
+                    </div>
+                    <div class="items">                        
+                        <div class="brands-logo-card">
+                            <a href="#">
+                                <img src="assets/imgs/brand-logo-4.svg" alt="#" class="img-fluid">
+                            </a>                                
+                        </div>                        
+                    </div>
+                    <div class="items">                        
+                        <div class="brands-logo-card">
+                            <a href="#">
+                                <img src="assets/imgs/brand-logo-5.svg" alt="#" class="img-fluid">
+                            </a>                                
+                        </div>                        
+                    </div>
+                    <div class="items">                        
+                        <div class="brands-logo-card">
+                            <a href="#">
+                                <img src="assets/imgs/brand-logo-4.svg" alt="#" class="img-fluid">
+                            </a>                                
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- site footer -->
+
+    <footer id="footer">
+        <div class="ft-shap-img">
+            <img src="assets/imgs/ft-shape-img.png" alt="#" class="img-fluid">
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-logo mx-auto">
+                    <a href="index.html" title="Reid Power Solution">
+                        <img src="assets/imgs/footer-logo.svg" alt="Reid Power Solution" class="img-fluid" />
+                    </a>
+                </div>
+                <ul class="main-menu footer-menu d-flex justify-content-center align-items-center flex-wrap">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Get Resources
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                <div class="ft-contact-block">
+                    <div class="ft-contact-row d-flex justify-content-between align-items-end flex-wrap">
+                        <div class="left-info">
+                            <div class="ft-contact-card">
+                                <h4 class="title">
+                                    Phone:
+                                </h4>
+                                <a href="tel:203-3020-1000">
+                                    203-3020-1000
+                                </a>
+                            </div>
+                            <div class="ft-contact-card">
+                                <h4 class="title">
+                                    Email:
+                                </h4>
+                                <a href="mailto:reidpowersolutions@gmail.com">
+                                    reidpowersolutions@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ft-contact-card">                            
+                            <a href="#">
+                                <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.00046 0.0666504C2.76046 0.0666504 0.133789 2.69332 0.133789 5.93332C0.133789 9.79145 3.94819 11.6384 4.42606 12.0682C4.91406 12.5072 5.31726 13.4912 5.47992 14.049C5.55886 14.32 5.78072 14.457 6.00046 14.4629C6.22072 14.4565 6.44206 14.3194 6.52099 14.049C6.68366 13.4912 7.08686 12.5077 7.57486 12.0682C8.05272 11.6384 11.8671 9.79145 11.8671 5.93332C11.8671 2.69332 9.24046 0.0666504 6.00046 0.0666504ZM6.00046 7.53332C5.11672 7.53332 4.40046 6.81705 4.40046 5.93332C4.40046 5.04958 5.11672 4.33332 6.00046 4.33332C6.88419 4.33332 7.60046 5.04958 7.60046 5.93332C7.60046 6.81705 6.88419 7.53332 6.00046 7.53332Z" fill="white"/>
+                                </svg>
+                                72-11 Austin St. Suite 107, Forest Hills, NY 11375
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copywrite">
+            <div class="container">
+                <div class="footer-copy-row d-flex justify-content-between align-items-center flex-wrap">
+                    <ul class="ft-social-icons d-flex align-items-center">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="ft-links d-flex align-items-center">
+                        <li>
+                            <a href="#">
+                                Term & Condition
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Cookies
+                            </a>
+                        </li>
+                        <li>
+                            2023 &copy;
+                            <a href="#">
+                                reidpowersolutions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- AOS JS FILE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dd2c46839c.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

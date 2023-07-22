@@ -1,0 +1,48 @@
+
+.breadcrumb-banner {
+    min-height: 39.8rem;
+    @include media-max(767px){
+        min-height: 32rem;
+        padding-top: 15rem;
+    }
+    @include media-max(480px){
+        min-height: 26rem;
+        padding-top: 13rem;
+    }
+    .breadcrumb-title {
+        @include sizing(5.4rem,126.5%,700,$white);
+        @include media-max(767px){
+            font-size: 4rem;
+        }
+        @include media-max(480px){
+            font-size: 3rem;
+        }
+        &.brline {
+            span {
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+    padding-top: 17.1rem;
+
+    &.media-details-breadcrumb {
+        padding-top: 15.3rem;
+        .breadcrumb-title {
+            font-size: 4rem;
+            margin-bottom: 2.8rem;
+            max-width: 64.2rem;
+        }
+    }
+    .breadcrumbs {
+        gap: 3.8rem;
+        li {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            @include sizing(1.5rem,2.8rem,400,rgba($white,.80));
+            text-transform: capitalize;
+        }
+    }
+}

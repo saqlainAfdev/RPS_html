@@ -1,0 +1,53 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+button,a{
+    border: 0;
+    outline:0;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1270px;
+    margin-inline: auto;
+    padding-inline: 15px;
+    
+}
+
+.sm-container {
+    max-width: 1070px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    @include media-max(991px){
+        font-size: 8px;
+    }
+    @include media-max(450px){
+        font-size: 7px;
+    }
+}
+
+body {    
+    background-color: $white;
+    min-width: 320px;
+    font-family: $cartoGothic;
+    overflow-x: hidden;
+}
+
+ul, ol {
+    list-style-type: none;
+}

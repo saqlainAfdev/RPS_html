@@ -1,0 +1,33 @@
+
+// terms & condtions section scss
+
+.terms-conditions-sec {
+    padding-block: 8rem;
+    @include media-max(767px){
+        padding-block: 5rem;
+    }
+    .terms-conditions-desc-block {
+        max-width: 76.2rem;
+        p {
+            @include sizing(1.6rem,2.8rem,400,#787C82);
+            letter-spacing: -0.528px;
+            
+            &:not(:last-child){
+                margin-bottom: 3rem;
+            }
+        }
+        .desc {
+            margin-bottom: 4rem;
+        }
+        .title {
+            @include sizing(2.4rem,normal,700,#051A27);
+            margin-bottom: 1.8rem;
+        }
+    }
+    .license-items {
+        li {
+            @include sizing(1.6rem,4rem,400,#787C82);
+            letter-spacing: -0.594px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin pos-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin flex-box($display,$dir,$x-align,$y-align) {
+    display:$display;
+    flex-direction: $dir;
+    align-items: $y-align;
+    justify-content: $x-align;
+    direction: $dir;
+}
+
+@mixin sizing($size,$line,$weight,$color) {
+  font-size: $size;
+  line-height: $line;
+  font-weight: $weight;
+  color: $color;  
+}
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin multiline-dots($line) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+@mixin transition {
+    transition: .4s ease-in-out;
+}
+
+@mixin img-placeholder($size) {
+    width: 100%;
+    height: 100%;
+    object-fit: $size;
+    object-position: center;
+}
+
+@mixin slider-reset {
+    display: none;
+    &.slick-slider {
+        display: block;
+    }
+}
+
+@mixin primary-scrollbar {
+    /* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #D0D0D0; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primary; 
+    width: 4px;
+  }
+  
+}
+
+
+@mixin img-block($hieght){
+    max-width: 100%;
+    height: $hieght;
+    overflow: hidden;
+    img {
+        @include img-placeholder(cover);
+    }
+}
+

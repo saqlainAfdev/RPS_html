@@ -1,0 +1,25 @@
+
+
+// max width breatpoint
+
+@mixin media-max($width) {
+    @media (max-width:$width) {
+        @content;
+    }
+}
+
+// min width breatpoint
+
+@mixin media-min($width) {
+    @media (min-width:$width) {
+        @content;
+    }
+}
+
+// both min and max width breatpoint
+
+@mixin media-both($min-width,$max-width) {
+    @media (min-width:$min-width) and (max-width:max-width) {
+        @content;
+    }
+}

@@ -1,0 +1,32 @@
+
+
+// components
+
+@import 'components/variables';
+@import 'components/mixins';
+@import 'components/responsive';
+@import 'components/styled';
+@import 'components/custom-utility';
+@import 'components/font';
+@import 'components/buttons';
+@import 'components/breadcrumb';
+@import 'components/mobile-menu';
+
+
+
+// layout
+
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/latest-media';
+@import 'pages/pricing';
+@import 'pages/terms-condtions';
+@import 'pages/vendors';
+@import 'pages/services';
+@import 'pages/IT-services';

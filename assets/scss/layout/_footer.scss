@@ -1,0 +1,160 @@
+
+#footer {
+    background-color: $primary;
+    position: relative;
+    .ft-shap-img {
+        z-index: 1;
+        top: 2.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-logo {
+        max-width: 17.2rem;
+        height: 5.2rem;
+        overflow: hidden; 
+        margin-bottom: 3.4rem;
+    }
+    .main-footer {
+        padding: 6.2rem 0 1.9rem;
+        position: relative;
+        z-index: 2;
+    }
+    .footer-menu {
+        gap: 4rem;
+        @include media-max(767px){
+            gap: 2rem 3rem;
+        }
+        
+        li {
+            a {
+                @include sizing(1.2rem,normal,400,rgba($white,.80));
+                @include transition;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+                @include transition;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background-color: $secondary;
+                    @include transition;
+                    @include pos-center;
+                    bottom: -1rem;
+                    top: auto;
+                }
+                &:hover {
+                    color: $secondary;
+                    &::before {
+                        width: 90%;
+                    }
+                }
+            }
+            &.active {
+                a {
+                    color: $secondary;
+                    &::before {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+    .ft-contact-block {
+        margin-top: 9.2rem;
+        @include media-max(767px){
+            margin-top: 4rem;
+        }
+    }
+    .ft-contact-card {
+        .title {
+            @include sizing(1.2rem,2.2rem,400,rgba($white,.60));
+            text-transform: capitalize;
+            margin-bottom: .2rem;
+        }
+        a {
+            @include sizing(1.4rem,2.2rem,400,$white);
+            font-family: $cubin;
+            @include transition;
+            &:hover {
+                color: $secondary;
+                svg {
+                    path {
+                        fill: $secondary;
+                    }
+                }
+            }
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            svg {
+                path {
+                    @include transition;
+                }
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: .9rem;
+        }
+    }
+    .footer-copywrite {
+        padding-block: 1.4rem;
+        border-top: 1px solid #457B93;
+    }
+    .footer-copy-row {
+        gap: 2rem 3rem;
+    
+    }
+    .ft-social-icons {
+        gap: .9rem;
+        li {
+            a {
+                width: 2.92rem;
+                height: 2.92rem;
+                border-radius: 50%;
+                @include flex-center;
+                background-color: #457B93;
+                @include transition;
+                font-size: 1.4rem;
+                color: $white;
+                &:hover {
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+    .ft-links {
+        gap: 2rem;
+        flex-wrap: wrap;
+        li {
+            @include sizing(1.4rem,1.6rem, 400,rgba($white,.80));                
+                font-family: $cubin;
+            position: relative;
+            &:not(:last-child){
+                &::before {
+                    content: "";
+                    width: 2px;
+                    height: 1rem;
+                    background-color: $white;
+                    position: absolute;
+                    right: -1rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            
+            a {
+                @include sizing(1.4rem,1.6rem, 400,rgba($white,.80));
+                @include transition;
+                font-family: $cubin;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    .ft-contact-row {
+        gap: 3rem;
+    }
+}

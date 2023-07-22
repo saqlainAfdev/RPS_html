@@ -1,0 +1,226 @@
+
+// about welcome section scss
+
+.about-welcome-sec {
+    .about-welcome-row {
+        gap: 3rem 1.6rem;
+        .cols {
+            width: calc(50% - .8rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+    }
+    .about-welcome-img {
+        @include img-block(31.8rem);
+    }
+    .about-title-block {
+        .about-welcome-img {
+            margin-bottom: 10.1rem;
+            @include media-max(767px){
+                margin-bottom: 3rem;
+            }
+        }
+        
+    }
+    .welcome-desc-block {
+        padding-top: 5.2rem;
+        @include media-max(767px){
+            padding-top: 0;
+        }
+        .about-welcome-img {
+            margin-bottom: 4.9rem;
+            @include media-max(767px){
+                margin-bottom: 3rem;
+            }
+        }
+        p {
+            font-size: 1.8rem;
+            line-height: 186%;
+            &:not(:last-child){
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// solutions to clients section scss
+
+.solutions-to-client-sec {
+    background-color: $gray-color;
+    .clients-solutions-block {
+        padding-inline: 6.3rem;
+        position: relative;
+        @include media-max(767px){
+            padding-right: 0;
+        }
+        .branding-logo {
+            position: absolute;
+            left: -3rem;
+            bottom: 0;
+            @include media-max(1130px){
+                left: 0;
+                
+            }
+            @include media-max(767px){
+                top: 50%;
+                transform: translateY(-50%);
+                bottom: auto;
+            }
+            
+        }
+    }
+    .client-solutions-main-row {
+        gap: 3rem 5.4rem;
+        margin-bottom: 1.6rem;
+        @include media-max(1130px){
+            padding-left: 2rem;
+            gap: 3rem;
+        }
+        .solutions-img-col {
+            width: calc(38.3% - 2.7rem);
+            @include media-max(1130px){
+                width: calc(38.3% - 1.5rem);
+            }
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+        .solutions-desc-col {
+            width: calc(61.7% - 2.7rem);
+            @include media-max(1130px){
+                width: calc(61.7% - 1.5rem);
+            }
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+    }
+    .solutions-img-block {
+        @include img-block(36.2rem);
+    }
+    .about-sol-desc {
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+    .clients-solutions-img-row {
+        padding-inline: 6rem;
+        gap: 3rem 1.6rem;
+        @include media-max(767px){
+            padding-left: 2rem;
+            padding-right: 0;
+        }
+        .left-col {
+            width: calc(34.3% - 0.8rem);
+            @include media-max(767px){
+
+                width: 100%;
+            }
+        }
+        .right-col {
+            width: calc(65.7% - .8rem);
+            @include media-max(767px){
+
+                width: 100%;
+            }
+        }
+    }
+    .solution-sm-img {
+        @include img-block(30rem);
+    }
+    
+    .solution-lg-img {
+        @include img-block(36.4rem);
+    }
+}
+
+// owned bussiness section scss
+
+.black-owned-sec {
+    background-color: $primary;
+    .black-owned-row {
+        .cols {
+            width: 50%;
+            @include media-max(767px){
+                width: 100%;
+                margin-left: -1px;
+            }
+        }
+    }
+    .black-owned-img-block{
+        @include img-block(68.2rem);
+        position: relative;
+        @include media-max(1200px){
+            height: 55rem;
+        }
+        @include media-max(767px){
+            height: 40rem;
+        }
+        .play-btn {
+            width: 8.3rem;
+            height: 8.3rem;
+            border: 2.5px solid $white;
+            background-color: rgba($white,.14);
+            @include pos-center;
+            @include transition;
+            @include flex-center;
+            border-radius: 50%;
+            &:hover {
+                background-color: $secondary;
+                border-color: $secondary;
+            }
+            svg {
+                path {
+                    @include transition;
+                }
+            }
+        }
+    }
+    .black-owned-desc-block {
+        padding: 8.8rem;
+        @include media-max(1200px){
+            padding: 3rem;
+        }
+        p {
+            color: #CFCFCF;
+            &:not(:last-child){
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+// offer services section scss
+
+.offer-services-sec {
+    .offer-services-row {
+        gap: 3rem 5rem;
+        .cols {
+            width: calc(50% - 2.5rem);
+            @include media-max(767px){
+                width: 100%;
+            }
+        }
+    }
+    .offer-services-img {
+        @include img-block(46.9rem);
+    }
+    .offer-services-desc-block {
+        .desc {
+            margin-top: 8.1rem;
+            margin-bottom: 1.7rem;
+            @include media-max(767px){
+                margin-top: 0;
+            }
+            p {
+                @include sizing(1.3rem,180%,400,rgba($secondary,.80));
+                font-family: $sora;
+                &:not(:last-child){
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+    
+}
