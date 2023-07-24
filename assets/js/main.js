@@ -181,7 +181,7 @@ if ($(".brandsSlider").length) {
 AOS.init(
   {
     once: true,
-    
+    disable: window.innerWidth < 768,
 
 
   }

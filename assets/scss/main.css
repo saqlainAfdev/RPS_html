@@ -1723,10 +1723,14 @@ p {
   }
 }
 @media (max-width: 767px) {
-  .aos-animate {
-    transition-property: none !important;
+  .aos-animate [data-aos] {
+    pointer-events: auto !important;
+  }
+  .aos-animate html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+    opacity: 1 !important;
+  }
+  .aos-animate html:not(.no-js) [data-aos=fade-up] {
     transform: none !important;
-    animation: none !important;
   }
 }
 
