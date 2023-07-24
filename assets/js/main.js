@@ -64,6 +64,41 @@ humbergerIcon.addEventListener('click',()=>{
     
   });
 
+  // AOS JS
+
+AOS.init(
+  {
+    once: true,
+    disable: window.innerWidth < 768,
+
+
+  }
+);
+
+// animate title words JS
+
+const swiftUpElements = document.querySelectorAll('.animate-title');
+
+if(swiftUpElements){
+  swiftUpElements.forEach(elem => {
+
+    const words = elem.textContent.split(' ');
+    elem.innerHTML = '';
+  
+    words.forEach((el, index) => {
+      words[index] = `<span><i>${words[index]}</i></span>`;
+    });
+  
+    elem.innerHTML = words.join(' ');
+  
+    const children = document.querySelectorAll('span > i');
+    children.forEach((node, index) => {
+      node.style.animationDelay = `${index * .2}s`;
+    });
+  
+  });
+}
+
 
 // homepage services slider
 
@@ -176,40 +211,7 @@ if ($(".brandsSlider").length) {
   });
 }
 
-// AOS JS
 
-AOS.init(
-  {
-    once: true,
-    disable: window.innerWidth < 768,
-
-
-  }
-);
-
-// animate title words JS
-
-const swiftUpElements = document.querySelectorAll('.animate-title');
-
-if(swiftUpElements){
-  swiftUpElements.forEach(elem => {
-
-    const words = elem.textContent.split(' ');
-    elem.innerHTML = '';
-  
-    words.forEach((el, index) => {
-      words[index] = `<span><i>${words[index]}</i></span>`;
-    });
-  
-    elem.innerHTML = words.join(' ');
-  
-    const children = document.querySelectorAll('span > i');
-    children.forEach((node, index) => {
-      node.style.animationDelay = `${index * .2}s`;
-    });
-  
-  });
-}
 
 //  add active class to menu link
 
