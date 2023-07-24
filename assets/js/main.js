@@ -231,12 +231,14 @@ if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
 if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
   
 $('.services-arrow-btn.next-btn').click(function () {
-  $(".home-services-slider").slick('slickNext');
   alert('next');
+  $(".home-services-slider").slick('slickNext');
+    
 });
 $('.services-arrow-btn.prev-btn').click(function () {
-  $(".home-services-slider").slick('slickPrev');
   alert('prev');
+  $(".home-services-slider").slick('slickPrev');
+    
 });
 }
 
