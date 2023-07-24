@@ -99,6 +99,7 @@ if(swiftUpElements){
   });
 }
 
+alert('atert 1');
 
 // homepage services slider
 
@@ -136,6 +137,7 @@ if ($(".home-services-slider").length) {
       $(".home-services-slider").slick('slickPrev');      
     });
 }
+alert('atert 1');
 
 // homepage testimonials slider
 
@@ -166,6 +168,7 @@ if ($(".testimonials-slider").length) {
       $(".testimonials-slider").slick('slickPrev');      
     });
 }
+alert('atert 3');
 
 // homepage brand logo slider
 
@@ -210,6 +213,7 @@ if ($(".brandsSlider").length) {
     ],
   });
 }
+alert('atert 3');
 
 
 
