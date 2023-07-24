@@ -229,14 +229,15 @@ if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
   
 }
 if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
-  
-$('.services-arrow-btn.next-btn').click(function () {
-  alert('next');
+  $('.services-arrow-btn.next-btn').css('cursor','pointer');
+$('.services-arrow-btn.next-btn').click(function (e) {  
+  e.preventDefault();
   $(".home-services-slider").slick('slickNext');
     
 });
-$('.services-arrow-btn.prev-btn').click(function () {
-  alert('prev');
+$('.services-arrow-btn.prev-btn').css('cursor','pointer');
+$('.services-arrow-btn.prev-btn').click(function (e) { 
+  e.preventDefault(); 
   $(".home-services-slider").slick('slickPrev');
     
 });
