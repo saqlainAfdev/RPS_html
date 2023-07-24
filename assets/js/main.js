@@ -180,7 +180,10 @@ if ($(".brandsSlider").length) {
 
 AOS.init(
   {
-    once: true
+    once: true,
+    disable: 'mobile', 
+
+
   }
 );
 
