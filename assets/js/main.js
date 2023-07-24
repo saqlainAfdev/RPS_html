@@ -99,42 +99,6 @@ if (typeof (swiftUpElements) != 'undefined' && swiftUpElements != null) {
   });
 }
 
-// homepage services slider
-// const homeSlider = document.querySelector('.home-services-slider');
-// if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
-//   const slider = $(".home-services-slider");
-//   let currentSlideElement = $('.slides-no .currentSlide');
-
-//   slider.on('init', function (event, slick) {
-//     updateCurrentSlide(slick.currentSlide);
-//   });
-
-//   slider.on('afterChange', function (event, slick, currentSlide) {
-//     updateCurrentSlide(currentSlide);
-//   });
-
-//   slider.slick({
-//     infinite: true,
-//     dots: true,
-//     autoplay: false,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     customPaging: function (slider, i) {
-//       $('.slides-no .totalSlides').text(slider.slideCount);
-//     }
-//   });
-
-//   function updateCurrentSlide(currentSlide) {
-//     currentSlideElement.text(currentSlide + 1);
-//   };
-
-//   $('.services-arrow-btn.next-btn').click(function () {
-//     $(".home-services-slider").slick('slickNext');
-//   });
-//   $('.services-arrow-btn.prev-btn').click(function () {
-//     $(".home-services-slider").slick('slickPrev');
-//   });
-// }
 
 // homepage testimonials slider
 
@@ -232,6 +196,43 @@ anChor.forEach(el => {
     }
   });
 });
+
+// homepage services slider
+const homeSlider = document.querySelector('.home-services-slider');
+if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
+  const slider = $(".home-services-slider");
+  let currentSlideElement = $('.slides-no .currentSlide');
+
+  slider.on('init', function (event, slick) {
+    updateCurrentSlide(slick.currentSlide);
+  });
+
+  slider.on('afterChange', function (event, slick, currentSlide) {
+    updateCurrentSlide(currentSlide);
+  });
+
+  slider.slick({
+    infinite: true,
+    dots: true,
+    autoplay: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    customPaging: function (slider, i) {
+      $('.slides-no .totalSlides').text(slider.slideCount);
+    }
+  });
+
+  function updateCurrentSlide(currentSlide) {
+    currentSlideElement.text(currentSlide + 1);
+  };
+
+  $('.services-arrow-btn.next-btn').click(function () {
+    $(".home-services-slider").slick('slickNext');
+  });
+  $('.services-arrow-btn.prev-btn').click(function () {
+    $(".home-services-slider").slick('slickPrev');
+  });
+}
 
 
 
