@@ -1722,6 +1722,14 @@ p {
     top: 0;
   }
 }
+@media (max-width: 767px) {
+  .aos-animate {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
 .about-welcome-sec .about-welcome-row {
   gap: 3rem 1.6rem;
 }

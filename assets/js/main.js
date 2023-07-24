@@ -181,10 +181,7 @@ if ($(".brandsSlider").length) {
 AOS.init(
   {
     once: true,
-    disable: function() {
-      var maxWidth = 767;
-      return window.innerWidth < maxWidth;
-    } 
+    
 
 
   }
