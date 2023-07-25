@@ -230,25 +230,23 @@ if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
 }
 if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
   $('.services-arrow-btn.next-btn,.services-arrow-btn.prev-btn').css('cursor','pointer');
-// $('.services-arrow-btn.next-btn').click(function (e) {  
-//   e.preventDefault();
-//   $(".home-services-slider").slick('slickNext');
-    
-// });
-// $('.services-arrow-btn.prev-btn').click(function (e) { 
-//   e.preventDefault(); 
-//   $(".home-services-slider").slick('slickPrev'); 
-    
-// });
 $(document).ready(function() {
   $('.services-arrow-btn.prev-btn').on('touchstart', function() {
     // Your touchstart event handler code here
-    alert("prev button");
+    $(".home-services-slider").slick('slickPrev');
   });
   $('.services-arrow-btn.next-btn').on('touchstart', function() {
-    // Your touchstart event handler code here
-    alert("next button");
+    // Your touchstart event handler code here  
+    $(".home-services-slider").slick('slickNext');
   });
+  $('.services-arrow-btn.next-btn').click(function () {    
+  $(".home-services-slider").slick('slickNext');
+    
+});
+$('.services-arrow-btn.prev-btn').click(function () {   
+  $(".home-services-slider").slick('slickPrev'); 
+    
+});
 });
 }
 
