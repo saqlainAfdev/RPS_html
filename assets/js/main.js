@@ -231,6 +231,15 @@ if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
 if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
   $('.services-arrow-btn.next-btn,.services-arrow-btn.prev-btn').css('cursor','pointer');
 $(document).ready(function() {
+  
+  $('.services-arrow-btn.next-btn').click(function () {    
+    $(".home-services-slider").slick('slickNext');
+      
+  });
+  $('.services-arrow-btn.prev-btn').click(function () {   
+    $(".home-services-slider").slick('slickPrev'); 
+      
+  });
   $('.services-arrow-btn.prev-btn').on('touchstart', function() {
     // Your touchstart event handler code here
     alert('prev touch');
@@ -243,14 +252,6 @@ $(document).ready(function() {
     $(".home-services-slider").slick('slickNext');
     
   });
-  $('.services-arrow-btn.next-btn').click(function () {    
-  $(".home-services-slider").slick('slickNext');
-    
-});
-$('.services-arrow-btn.prev-btn').click(function () {   
-  $(".home-services-slider").slick('slickPrev'); 
-    
-});
 });
 }
 
