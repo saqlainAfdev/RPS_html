@@ -238,7 +238,7 @@ $('.services-arrow-btn.next-btn').click(function (e) {
 $('.services-arrow-btn.prev-btn').css('cursor','pointer');
 $('.services-arrow-btn.prev-btn').click(function (e) { 
   e.preventDefault(); 
-  $(".home-services-slider").slick('slickPrev');
+  $(".home-services-slider").slick('slickPrev'); 
     
 });
 }
