@@ -233,13 +233,15 @@ if (typeof (homeSlider) != 'undefined' && homeSlider != null) {
 $(document).ready(function() {
   $('.services-arrow-btn.prev-btn').on('touchstart', function() {
     // Your touchstart event handler code here
-    $(".home-services-slider").slick('slickPrev');
     alert('prev touch');
+    $(".home-services-slider").slick('slickPrev');
+    
   });
   $('.services-arrow-btn.next-btn').on('touchstart', function() {
     // Your touchstart event handler code here  
-    $(".home-services-slider").slick('slickNext');
     alert('next touch');
+    $(".home-services-slider").slick('slickNext');
+    
   });
   $('.services-arrow-btn.next-btn').click(function () {    
   $(".home-services-slider").slick('slickNext');
